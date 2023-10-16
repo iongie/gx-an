@@ -1,0 +1,36 @@
+.navBarContainer{
+    background-color: var(--surface-container);
+    border-radius: var(--shape-corner-none);
+    height: 80px;
+    width: 100%;
+    box-shadow: var(--elevation-0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 12px 0 16px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+[navBarItem]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+}
+
+/* [navBarItem]:hover{
+    background-color: var(--surface-container-high);
+    border-radius: var(--shape-corner-large);
+} */
+
+.elevated{
+    box-shadow: var(--elevation-1);
+}

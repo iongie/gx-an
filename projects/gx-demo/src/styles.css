@@ -1,0 +1,590 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
+@font-face {
+    font-family: 'Nunito Sans';
+    font-stretch: 100%;
+    src: url(assets/fonts/Nunito_Sans.woff2) format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: red solid 1px; */
+}
+
+body{
+    max-width: 100vw;
+    overflow: auto;
+}
+
+:root {
+    /* display - large */
+    --display-large-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --display-large-font-family-style: Regular;
+    --display-large-font-weight: 400px;
+    --display-large-font-size: 57px;
+    --display-large-line-height: 64px;
+    --display-large-letter-spacing: -0.25px;
+    /* display - medium */
+    --display-medium-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --display-medium-font-family-style: Regular;
+    --display-medium-font-weight: 400px;
+    --display-medium-font-size: 45px;
+    --display-medium-line-height: 52px;
+    --display-medium-letter-spacing: 0px;
+    /* display - small */
+    --display-small-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --display-small-font-family-style: Regular;
+    --display-small-font-weight: 400px;
+    --display-small-font-size: 36px;
+    --display-small-line-height: 44px;
+    --display-small-letter-spacing: 0px;
+    /* headline - large */
+    --headline-large-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --headline-large-font-family-style: Regular;
+    --headline-large-font-weight: 400px;
+    --headline-large-font-size: 32px;
+    --headline-large-line-height: 40px;
+    --headline-large-letter-spacing: 0px;
+    /* headline - medium */
+    --headline-medium-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --headline-medium-font-family-style: Regular;
+    --headline-medium-font-weight: 400px;
+    --headline-medium-font-size: 28px;
+    --headline-medium-line-height: 36px;
+    --headline-medium-letter-spacing: 0px;
+    /* headline - small */
+    --headline-small-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --headline-small-font-family-style: Regular;
+    --headline-small-font-weight: 400px;
+    --headline-small-font-size: 24px;
+    --headline-small-line-height: 32px;
+    --headline-small-letter-spacing: 0px;
+    /* body - large */
+    --body-large-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --body-large-font-family-style: Regular;
+    --body-large-font-weight: 400px;
+    --body-large-font-size: 16px;
+    --body-large-line-height: 24px;
+    --body-large-letter-spacing: 0.50px;
+    /* body - medium */
+    --body-medium-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --body-medium-font-family-style: Regular;
+    --body-medium-font-weight: 400px;
+    --body-medium-font-size: 14px;
+    --body-medium-line-height: 20px;
+    --body-medium-letter-spacing: 0.25px;
+    /* body - small */
+    --body-small-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --body-small-font-family-style: Regular;
+    --body-small-font-weight: 400px;
+    --body-small-font-size: 12px;
+    --body-small-line-height: 16px;
+    --body-small-letter-spacing: 0.40px;
+    /* label - large */
+    --label-large-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --label-large-font-family-style: Medium;
+    --label-large-font-weight: 500px;
+    --label-large-font-size: 14px;
+    --label-large-line-height: 20px;
+    --label-large-letter-spacing: 0.10px;
+    /* label - medium */
+    --label-medium-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --label-medium-font-family-style: Medium;
+    --label-medium-font-weight: 500px;
+    --label-medium-font-size: 12px;
+    --label-medium-line-height: 16px;
+    --label-medium-letter-spacing: 0.50px;
+    /* label - small */
+    --label-small-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --label-small-font-family-style: Medium;
+    --label-small-font-weight: 500px;
+    --label-small-font-size: 11px;
+    --label-small-line-height: 16px;
+    --label-small-letter-spacing: 0.50px;
+    /* title - large */
+    --title-large-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --title-large-font-family-style: Regular;
+    --title-large-font-weight: 400px;
+    --title-large-font-size: 22px;
+    --title-large-line-height: 28px;
+    --title-large-letter-spacing: 0px;
+    /* title - medium */
+    --title-medium-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --title-medium-font-family-style: Medium;
+    --title-medium-font-weight: 500px;
+    --title-medium-font-size: 16px;
+    --title-medium-line-height: 24px;
+    --title-medium-letter-spacing: 0.15px;
+    /* title - small */
+    --title-small-font-family-name: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    --title-small-font-family-style: Medium;
+    --title-small-font-weight: 500px;
+    --title-small-font-size: 14px;
+    --title-small-line-height: 20px;
+    --title-small-letter-spacing: 0.10px;
+
+    /* tonal 500 */
+    --primary: #204C80;
+    /* tonal 50 */
+    --on-primary: #F8F8F8;
+    /* tonal 100 */
+    --primary-container: #bac8d8;
+    /* tonal 900 */
+    --on-primary-container: #0d2036;
+    /* tonal 500 */
+    --secondary: #1b7025;
+    /* tonal 50 */
+    --on-secondary: #e8f1e9;
+    /* tonal 100 */
+    --secondary-container: #b8d3bb;
+    /* tonal 900 */
+    --on-secondary-container: #0b2f10;
+    /* tonal 500 */
+    --tertiary: #6D3202;
+    /* tonal 50 */
+    --on-tertiary: #F0EBE6;
+    /* tonal 100 */
+    --tertiary-container: #d2bfb1;
+    /* tonal 900 */
+    --on-tertiary-container: #2e1501;
+    /* tonal 500 */
+    --error: #b9292f;
+    /* tonal 50 */
+    --on-error: #f8eaea;
+    /* tonal 100 */
+    --error-container: #e9bdbf;
+    /* tonal 900 */
+    --on-error-container: #4e1114;
+    /* warna untuk permukaan */
+    /* cocok untuk background */
+    --surface: #CAD5E3;
+    /* tonal 100 */
+    --surface-dim: #82B2D6;
+    /* cocok untuk app menu bar, 
+    navbar memberikan kesan warna
+    lebih mencolok ketimbang background */
+    --surface-container: #ADC4DD;
+    /* cocok untuk fab atau button yang tidak utama */
+    --surface-container-high: #7B9FCF;
+    /* cocok untuk skeleton loader */
+    --surface-container-low: #FAFBFC;
+    /* cocok untuk logo, 
+    text yang backgroundnya surface */
+    --on-surface: #160700;
+
+    --surface-inverse: var(--on-surface);
+    --on-surface-inverse: var(--surface);
+
+    --color-shadow-rgb: 0, 0, 0, 0.2;
+    --elevation-0: 0px 0px 0px 0px rgb(var(--color-shadow-rgb)), 0px 0px 0px 0px rgb(var(--color-shadow-rgb)), 0px 0px 0px 0px rgb(var(--color-shadow-rgb));
+    --elevation-1: 0px 3px 1px -2px rgb(var(--color-shadow-rgb)), 0px 2px 2px 0px rgb(var(--color-shadow-rgb)), 0px 1px 5px 0px rgb(var(--color-shadow-rgb));
+    --elevation-2: 0px 2px 4px -1px rgb(var(--color-shadow-rgb)), 0px 4px 5px 0px rgb(var(--color-shadow-rgb)), 0px 1px 10px 0px rgb(var(--color-shadow-rgb));
+    --elevation-3: 0px 5px 5px -3px rgb(var(--color-shadow-rgb)), 0px 8px 10px 1px rgb(var(--color-shadow-rgb)), 0px 3px 14px 2px rgb(var(--color-shadow-rgb));
+    --elevation-4: 0px 5px 5px -3px rgb(var(--color-shadow-rgb)), 0px 8px 10px 1px rgb(var(--color-shadow-rgb)), 0px 3px 14px 2px rgb(var(--color-shadow-rgb));
+    --elevation-5: 0px 8px 10px -6px rgb(var(--color-shadow-rgb)), 0px 16px 24px 2px rgb(var(--color-shadow-rgb)), 0px 6px 30px 5px rgb(var(--color-shadow-rgb));
+
+    /* Emphasized decelerate easing (out) */
+    --motion-easing-emphasized-decelerate-x0: 0.05000000074505806;
+    --motion-easing-emphasized-decelerate-y0: 0.699999988079071;
+    --motion-easing-emphasized-decelerate-x1: 0.10000000149011612;
+    --motion-easing-emphasized-decelerate-y1: 1;
+    /* Emphasized accelerate easing (in) */
+    --motion-easing-emphasized-accelerate-x0: 0.30000001192092896;
+    --motion-easing-emphasized-accelerate-y0: 0;
+    --motion-easing-emphasized-accelerate-x1: 0.800000011920929;
+    --motion-easing-emphasized-accelerate-y1: 0.15000000596046448;
+    /* Standard decelerate easing (out) */
+    --motion-easing-standard-decelerate-x0: 0;
+    --motion-easing-standard-decelerate-y0: 0;
+    --motion-easing-standard-decelerate-x1: 0;
+    --motion-easing-standard-decelerate-y1: 1;
+    /* Standard accelerate easing (in) */
+    --motion-easing-standard-accelerate-x0: 0.30000001192092896;
+    --motion-easing-standard-accelerate-y0: 0;
+    --motion-easing-standard-accelerate-x1: 1;
+    --motion-easing-standard-accelerate-y1: 1;
+    /* Duration 1000ms */
+    --motion-duration-1000: 1000ms;
+    /* Duration 900ms */
+    --motion-duration-900: 900ms;
+    /* Duration 800ms */
+    --motion-duration-800: 800ms;
+    /* Duration 700ms */
+    --motion-duration-700: 700ms;
+    /* Duration 600ms */
+    --motion-duration-600: 600ms;
+    /* Duration 550ms */
+    --motion-duration-550: 550ms;
+    /* Duration 500ms */
+    --motion-duration-500: 500ms;
+    /* Duration 450ms */
+    --motion-duration-450: 450ms;
+    /* Duration 400ms */
+    --motion-duration-400: 400ms;
+    /* Duration 350ms */
+    --motion-duration-350: 350ms;
+    /* Duration 300ms */
+    --motion-duration-300: 300ms;
+    /* Duration 250ms */
+    --motion-duration-250: 250ms;
+    /* Duration 200ms */
+    --motion-duration-200: 200ms;
+    /* Duration 150ms */
+    --motion-duration-150: 150ms;
+    /* Duration 100ms */
+    --motion-duration-100: 100ms;
+    /* Duration 50ms */
+    --motion-duration-50: 50ms;
+    /* Standard easing (in and out) */
+    --motion-easing-standard-x0: 0.20000000298023224;
+    --motion-easing-standard-y0: 0;
+    --motion-easing-standard-x1: 0;
+    --motion-easing-standard-y1: 1;
+    /* Linear easing */
+    --motion-easing-linear-x0: 0;
+    --motion-easing-linear-y0: 0;
+    --motion-easing-linear-x1: 1;
+    --motion-easing-linear-y1: 1;
+    /* Emphasized */
+    --motion-easing-emphasized-x0: 0.20000000298023224;
+    --motion-easing-emphasized-y0: 0;
+    --motion-easing-emphasized-x1: 0;
+    --motion-easing-emphasized-y1: 1;
+    /* Motion path */
+    --motion-path-standard-path: 1;
+
+    --shape-corner-full: 9999px;
+    --shape-corner-extra-large-top: (28px 28px 0 0);
+    --shape-corner-extra-large: 28px;
+    --shape-corner-large-top: (16px 16px 0 0);
+    --shape-corner-large-end: (0 16px 16px 0);
+    --shape-corner-large-start: (16px 0 0 16px);
+    --shape-corner-large: 16px;
+    --shape-corner-medium: 12px;
+    --shape-corner-small: 8px;
+    --shape-corner-extra-small-top: (4dp 4dp 0 0);
+    --shape-corner-extra-small: 4px;
+    --shape-corner-none: 0;
+}
+
+[data-theme="dark"] {
+    /* tonal 800 */
+    --primary: #204C80;
+    /* tonal 50 */
+    --on-primary: #F8F8F8;
+    /* tonal 900 */
+    --primary-container: #0d2036;
+    /* tonal 100 */
+    --on-primary-container: #bac8d8;
+    /* tonal 800 */
+    --secondary: #1b7025;
+    /* tonal 50 */
+    --on-secondary: #e8f1e9;
+    /* tonal 900 */
+    --secondary-container: #0b2f10;
+    /* tonal 100 */
+    --on-secondary-container: #b8d3bb;
+    /* tonal 800 */
+    --tertiary: #6D3202;
+    /* tonal 50 */
+    --on-tertiary: #F0EBE6;
+    /* tonal 900 */
+    --tertiary-container: #2e1501;
+    /* tonal 100 */
+    --on-tertiary-container: #d2bfb1;
+    /* tonal 800 */
+    --error: #66171a;
+    /* tonal 50 */
+    --on-error: #f8eaea;
+    /* tonal 900 */
+    --error-container: #4e1114;
+    /* tonal 100 */
+    --on-error-container: #e9bdbf;
+    /* warna untuk permukaan */
+    --surface: #121314;
+    /*  tonal 500, cocok untuk background */
+    --surface-dim: #82B2D6;
+    /* tonal 100 */
+    --surface-container: #22262B;
+    /* cocok untuk app menu bar, navbar memberikan kesan warna lebigh mencolok ketimbang banckgroudn */
+    --surface-container-high: #283742;
+    /* cocok untuk fab atau button yang tidak utama */
+    --surface-container-low: #455A75;
+    /* tonal 50 dari warna surface, cocok untuk skeleton loader */
+    --on-surface: #FAFBFC;
+    /* cocok untuk logo, text yang backgroundnya surface */
+    
+    --surface-inverse: var(--on-surface);
+    --on-surface-inverse: var(--surface);
+}
+
+.duration-50 {
+    transition-duration: var(--motion-duration-50);
+}
+
+.duration-100 {
+    transition-duration: var(--motion-duration-100);
+}
+
+.duration-150 {
+    transition-duration: var(--motion-duration-150);
+}
+
+.duration-200 {
+    transition-duration: var(--motion-duration-200);
+}
+
+.duration-250 {
+    transition-duration: var(--motion-duration-250);
+}
+
+.duration-300 {
+    transition-duration: var(--motion-duration-300);
+}
+
+.duration-350 {
+    transition-duration: var(--motion-duration-350);
+}
+
+.duration-400 {
+    transition-duration: var(--motion-duration-400);
+}
+
+.duration-450 {
+    transition-duration: var(--motion-duration-450);
+}
+
+.duration-500 {
+    transition-duration: var(--motion-duration-500);
+}
+
+.duration-550 {
+    transition-duration: var(--motion-duration-550);
+}
+
+.duration-600 {
+    transition-duration: var(--motion-duration-600);
+}
+
+.duration-700 {
+    transition-duration: var(--motion-duration-700);
+}
+
+.duration-800 {
+    transition-duration: var(--motion-duration-800);
+}
+
+.duration-900 {
+    transition-duration: var(--motion-duration-900);
+}
+
+.duration-1000 {
+    transition-duration: var(--motion-duration-1000);
+}
+
+.easing-standard {
+    transition-timing-function: cubic-bezier(var(--motion-easing-standard-x0),
+            var(--motion-easing-standard-y0),
+            var(--motion-easing-standard-x1),
+            var(--motion-easing-standard-y1));
+}
+
+.easing-linear {
+    transition-timing-function: cubic-bezier(var(--motion-easing-linear-x0),
+            var(--motion-easing-linear-y0),
+            var(--motion-easing-linear-x1),
+            var(--motion-easing-linear-y1));
+}
+
+.easing-standard-accelerate {
+    transition-timing-function: cubic-bezier(var(--motion-easing-standard-accelerate-x0),
+            var(--motion-easing-standard-accelerate-y0),
+            var(--motion-easing-standard-accelerate-x1),
+            var(--motion-easing-standard-accelerate-y1));
+}
+
+.easing-standard-decelerate {
+    transition-timing-function: cubic-bezier(var(--motion-easing-standard-decelerate-x0),
+            var(--motion-easing-standard-decelerate-y0),
+            var(--motion-easing-standard-decelerate-x1),
+            var(--motion-easing-standard-decelerate-y1));
+}
+
+.easing-emphasized {
+    transition-timing-function: cubic-bezier(var(--motion-easing-emphasized-x0),
+            var(--motion-easing-emphasized-y0),
+            var(--motion-easing-emphasized-x1),
+            var(--motion-easing-emphasized-y1));
+}
+
+.display-large {
+    font-family: var(--display-large-font-family-name);
+    font-style: var(--display-large-font-family-style);
+    font-weight: var(--display-large-font-weight);
+    font-size: var(--display-large-font-size);
+    letter-spacing: var(--display-large-letter-spacing);
+    line-height: var(--display-large-height);
+    text-transform: var(--display-large-text-transform);
+    text-decoration: var(--display-large-text-decoration);
+}
+
+.display-medium {
+    font-family: var(--display-medium-font-family-name);
+    font-style: var(--display-medium-font-family-style);
+    font-weight: var(--display-medium-font-weight);
+    font-size: var(--display-medium-font-size);
+    letter-spacing: var(--display-medium-letter-spacing);
+    line-height: var(--display-medium-height);
+    text-transform: var(--display-medium-text-transform);
+    text-decoration: var(--display-medium-text-decoration);
+}
+
+.display-small {
+    font-family: var(--display-small-font-family-name);
+    font-style: var(--display-small-font-family-style);
+    font-weight: var(--display-small-font-weight);
+    font-size: var(--display-small-font-size);
+    letter-spacing: var(--display-small-letter-spacing);
+    line-height: var(--display-small-height);
+    text-transform: var(--display-small-text-transform);
+    text-decoration: var(--display-small-text-decoration);
+}
+
+.headline-large {
+    font-family: var(--headline-large-font-family-name);
+    font-style: var(--headline-large-font-family-style);
+    font-weight: var(--headline-large-font-weight);
+    font-size: var(--headline-large-font-size);
+    letter-spacing: var(--headline-large-letter-spacing);
+    line-height: var(--headline-large-height);
+    text-transform: var(--headline-large-text-transform);
+    text-decoration: var(--headline-large-text-decoration);
+}
+
+.headline-medium {
+    font-family: var(--headline-medium-font-family-name);
+    font-style: var(--headline-medium-font-family-style);
+    font-weight: var(--headline-medium-font-weight);
+    font-size: var(--headline-medium-font-size);
+    letter-spacing: var(--headline-medium-letter-spacing);
+    line-height: var(--headline-medium-height);
+    text-transform: var(--headline-medium-text-transform);
+    text-decoration: var(--headline-medium-text-decoration);
+}
+
+.headline-small {
+    font-family: var(--headline-small-font-family-name);
+    font-style: var(--headline-small-font-family-style);
+    font-weight: var(--headline-small-font-weight);
+    font-size: var(--headline-small-font-size);
+    letter-spacing: var(--headline-small-letter-spacing);
+    line-height: var(--headline-small-height);
+    text-transform: var(--headline-small-text-transform);
+    text-decoration: var(--headline-small-text-decoration);
+}
+
+.body-large {
+    font-family: var(--body-large-font-family-name);
+    font-style: var(--body-large-font-family-style);
+    font-weight: var(--body-large-font-weight);
+    font-size: var(--body-large-font-size);
+    letter-spacing: var(--body-large-letter-spacing);
+    line-height: var(--body-large-height);
+    text-transform: var(--body-large-text-transform);
+    text-decoration: var(--body-large-text-decoration);
+}
+
+.body-medium {
+    font-family: var(--body-medium-font-family-name);
+    font-style: var(--body-medium-font-family-style);
+    font-weight: var(--body-medium-font-weight);
+    font-size: var(--body-medium-font-size);
+    letter-spacing: var(--body-medium-letter-spacing);
+    line-height: var(--body-medium-height);
+    text-transform: var(--body-medium-text-transform);
+    text-decoration: var(--body-medium-text-decoration);
+}
+
+.body-small {
+    font-family: var(--body-small-font-family-name);
+    font-style: var(--body-small-font-family-style);
+    font-weight: var(--body-small-font-weight);
+    font-size: var(--body-small-font-size);
+    letter-spacing: var(--body-small-tracking);
+    line-height: var(--body-small-height);
+    text-transform: var(--body-small-text-transform);
+    text-decoration: var(--body-small-text-decoration);
+}
+
+.label-large {
+    font-family: var(--label-large-font-family-name);
+    font-style: var(--label-large-font-family-style);
+    font-weight: var(--label-large-font-weight);
+    font-size: var(--label-large-font-size);
+    letter-spacing: var(--label-large-tracking);
+    line-height: var(--label-large-height);
+    text-transform: var(--label-large-text-transform);
+    text-decoration: var(--label-large-text-decoration);
+}
+
+.label-medium {
+    font-family: var(--label-medium-font-family-name);
+    font-style: var(--label-medium-font-family-style);
+    font-weight: var(--label-medium-font-weight);
+    font-size: var(--label-medium-font-size);
+    letter-spacing: var(--label-medium-letter-spacing);
+    line-height: var(--label-medium-height);
+    text-transform: var(--label-medium-text-transform);
+    text-decoration: var(--label-medium-text-decoration);
+}
+
+.label-small {
+    font-family: var(--label-small-font-family-name);
+    font-style: var(--label-small-font-family-style);
+    font-weight: var(--label-small-font-weight);
+    font-size: var(--label-small-font-size);
+    letter-spacing: var(--label-small-letter-spacing);
+    line-height: var(--label-small-height);
+    text-transform: var(--label-small-text-transform);
+    text-decoration: var(--label-small-text-decoration);
+}
+
+.title-large {
+    font-family: var(--title-large-font-family-name);
+    font-style: var(--title-large-font-family-style);
+    font-weight: var(--title-large-font-weight);
+    font-size: var(--title-large-font-size);
+    letter-spacing: var(--title-large-letter-spacing);
+    line-height: var(--title-large-height);
+    text-transform: var(--title-large-text-transform);
+    text-decoration: var(--title-large-text-decoration);
+}
+
+.title-medium {
+    font-family: var(--title-medium-font-family-name);
+    font-style: var(--title-medium-font-family-style);
+    font-weight: var(--title-medium-font-weight);
+    font-size: var(--title-medium-font-size);
+    letter-spacing: var(--title-medium-letter-spacing);
+    line-height: var(--title-medium-height);
+    text-transform: var(--title-medium-text-transform);
+    text-decoration: var(--title-medium-text-decoration);
+}
+
+.title-small {
+    font-family: var(--title-small-font-family-name);
+    font-style: var(--title-small-font-family-style);
+    font-weight: var(--title-small-font-weight);
+    font-size: var(--title-small-font-size);
+    letter-spacing: var(--title-small-letter-spacing);
+    line-height: var(--title-small-height);
+    text-transform: var(--title-small-text-transform);
+    text-decoration: var(--title-small-text-decoration);
+}
+
+body{
+    background-color: var(--surface);
+}

@@ -1,0 +1,10 @@
+<ng-container>
+    <ng-content select="[tabItemIcon]"></ng-content>
+    <ng-content select="[tabBadge]"></ng-content>
+    <ng-content select="[tabItemText]"></ng-content>
+    <div 
+        [ngClass]="itemIndicator 
+        ? [model+'-indicator-item', model+'-active-indicator-item']
+        :model+'-indicator-item'">
+    </div>
+</ng-container>

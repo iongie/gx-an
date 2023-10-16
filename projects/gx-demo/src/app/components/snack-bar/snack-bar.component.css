@@ -1,0 +1,44 @@
+.snackbar__container--small {
+    height: 48px;
+}
+
+.snackbar__container--big {
+    height: 68px;
+}
+
+.snackbar__container--big,
+.snackbar__container--small {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 0 16px 0 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--surface-inverse);
+    z-index: 200;
+}
+
+[labelSnackBar] {
+    font-family: var(--body-medium-font-family-name);
+    font-style: var(--body-medium-font-family-style);
+    font-weight: var(--body-medium-font-weight);
+    font-size: var(--body-medium-font-size);
+    letter-spacing: var(--body-medium-letter-spacing);
+    line-height: var(--body-medium-height);
+    text-transform: var(--body-medium-text-transform);
+    text-decoration: var(--body-medium-text-decoration);
+    color: var(--on-surface-inverse);
+}
+
+[iconSnackBar] {
+    flex: 1;
+    font-size: 24px;
+    background-color: var(--surface-inverse);
+    color: var(--on-surface-inverse);
+    display: flex;
+    justify-content: flex-end;
+}

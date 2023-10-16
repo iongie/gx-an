@@ -1,0 +1,29 @@
+<gxd-top-bar [model]="modelTopBar" [title]="titleTopBar">
+    <i class="fi fi-br-menu-burger" centerLeadingIcon></i>
+    <i class="fi-rr-settings-sliders" centerTrailingIcon></i>
+</gxd-top-bar>
+<gxd-main [model]="modelMain">
+    <gxd-button [type]="'button'" [label]="'save'" [model]="modelButton" [disabled]="false">
+        <i class="fi fi-sr-home" icon></i>
+        <p text>Save</p>
+    </gxd-button>
+    <gxd-divider></gxd-divider>
+    <gxd-card [model]="modelCard" [hover]="false">
+        <h1 class="display-large" card>Hallo</h1>
+    </gxd-card>
+    <gxd-divider></gxd-divider>
+    <gxd-badge [model]="modelBadge">
+        <p badge>999+</p>
+    </gxd-badge>
+    <gxd-divider></gxd-divider>
+</gxd-main>
+<gxd-nav-bar>
+    <gxd-nav-item [model]="modelNavBarItem" [itemIndicator]="true" navBarItem>
+        <i class="fi fi-rr-home" navItemIcon></i>
+        <p navBarItemText>home</p>
+    </gxd-nav-item>
+    <gxd-nav-item [model]="modelNavBarItem" [itemIndicator]="false" navBarItem>
+        <i class="fi fi-rr-user" navItemIcon></i>
+        <p navBarItemText>profil</p>
+    </gxd-nav-item>
+</gxd-nav-bar>

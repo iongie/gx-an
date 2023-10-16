@@ -1,0 +1,51 @@
+.elevated-card [card],
+.filled-card [card],
+.outlined-card [card]{
+    padding: 16px;
+}
+.elevated-card{
+    background-color: var(--surface);
+    border-radius: var(--shape-corner-medium);
+    box-shadow: var(--elevation-1);
+}
+
+.action-elevated-card:hover,
+.action-elevated-card:focus{
+    box-shadow: var(--elevation-2);
+}
+
+/* filled */
+.filled-card{
+    background-color: var(--surface-dim);
+    border-radius: var(--shape-corner-medium);
+    box-shadow: var(--elevation-0);
+}
+
+.action-filled-card:hover,
+.action-filled-card:focus{
+    box-shadow: var(--elevation-1);
+}
+
+.action-filled-card:hover::after,
+.action-filled-card:focus::after{
+    background-color: var(--on-surface);
+    opacity: 0.08;
+}
+/* outlined */
+.outlined-card{
+    background-color: var(--surface);
+    border-radius: var(--shape-corner-medium);
+    box-shadow: var(--elevation-0);
+    outline: 1px var(--primary) solid;
+}
+
+.action-outlined-card:hover,
+.action-outlined-card:focus{
+    box-shadow: var(--elevation-1);
+}
+
+.action-outlined-card:hover::after,
+.action-outlined-card:focus::after{
+    background-color: var(--on-surface);
+    opacity: 0.08;
+}

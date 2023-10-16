@@ -1,0 +1,5 @@
+<div [ngClass]="'snackbar__container--'+model">
+    <ng-content select="[labelSnackBar]"></ng-content>
+    <ng-content select="[actionSnackBar]"></ng-content>
+    <ng-content select="[iconSnackBar]"></ng-content>
+</div>

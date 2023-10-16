@@ -1,0 +1,31 @@
+.small-container,
+.large-container{
+    background-color: var(--error);
+    border-radius: var(--shape-corner-full);
+    position: relative;
+    right: -4px;
+    top:  0;
+}
+
+.small-container{
+    width: 6px;
+    height: 6px;
+}
+
+.large-container{
+    width: 34px;
+    height: 16px;
+    padding: 0 4px 0 4px;
+}
+
+[badge]{
+    font-family: var(--label-small-font-family-name);
+    font-style: var(--label-small-font-family-style);
+    font-weight: var(--label-small-font-weight);
+    font-size: var(--label-small-font-size);
+    letter-spacing: var(--label-small-letter-spacing);
+    line-height: var(--label-small-height);
+    text-transform: var(--label-small-text-transform);
+    text-decoration: var(--label-small-text-decoration);
+    color: var(--on-error);
+}
